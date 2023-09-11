@@ -1,0 +1,47 @@
+body {
+    /* background-image: url('background.webp'); */
+    background-size: cover;
+}
+
+h1 {
+    color: red;
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 10px solid #926915c7;
+    font-size: 48px;
+    font-family: 'Rubik Iso', cursive;
+    font-weight: bold;
+
+    padding: 100px;
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+em {
+    color: salmon;
+    display: block;
+    background-color: springgreen;
+}
+
+.facts {
+    background-color: blueviolet;
+}
+
+.button {
+    background-color: chocolate;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: chartreuse;
+}
+
+p {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 25vh;
+    height: 50vh;
+    background-color: salmon;
+}
