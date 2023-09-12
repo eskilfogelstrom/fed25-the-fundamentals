@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: salmon;
+}
+
+.wrapper {
+    max-width: 36rem;
+    margin: 4rem auto;
+    background-color: #fff;
+    border: 2px solid gray;
+    padding: 2rem;
+}
+
+.site-header {
+    padding-bottom: 1rem;
+}
+
+.site-header-title {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.site-header-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.site-header-menu-item {
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.image-grid img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.section-image {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
