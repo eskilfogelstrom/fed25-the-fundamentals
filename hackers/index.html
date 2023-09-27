@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <nav class="site-nav">
+          <a href="#" class="site-nav__logo">EMDB</a>
+          <ul class="site-nav__menu">
+            <li><a href="#videos" class="site-nav__link">Videos</a></li>
+            <li><a href="#images" class="site-nav__link">Images</a></li>
+            <li><a href="#plot" class="site-nav__link">Plot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="grid">
+        <main>
+          <section class="section" id="videos">
+            <h3 class="section__heading">Videos</h3>
+            <div class="gallery">
+              <article class="gallery__item">
+                <video
+                  src="videos/clip-1.mp4"
+                  class="gallery__video"
+                  controls
+                ></video>
+              </article>
+              <article class="gallery__item">
+                <video
+                  src="videos/clip-2.mp4"
+                  class="gallery__video"
+                  controls
+                ></video>
+              </article>
+              <article class="gallery__item">
+                <video
+                  src="videos/clip-3.mp4"
+                  class="gallery__video"
+                  controls
+                ></video>
+              </article>
+            </div>
+          </section>
+          <section class="section" id="images">
+            <h3 class="section__heading">Images</h3>
+            <div class="gallery">
+              <article class="gallery__item">
+                <img
+                  src="images/gallery/1.jpg"
+                  width="1023"
+                  height="725"
+                  alt="Screenshot of the movie where the main cast is standing in front of a fence."
+                  class="gallery__image"
+                />
+              </article>
+              <article class="gallery__item">
+                <img src="images/gallery/2.jpg" class="gallery__image" />
+              </article>
+              <article class="gallery__item">
+                <img src="images/gallery/3.jpg" class="gallery__image" />
+              </article>
+              <article class="gallery__item">
+                <img src="images/gallery/4.jpg" class="gallery__image" />
+              </article>
+            </div>
+          </section>
+          <section class="section" id="plot">
+            <h3 class="section__heading">Plot</h3>
+            A young boy is arrested by the U.S. Secret Service for writing a
+            computer virus and is banned from using a computer until his 18th
+            birthday. Years later, he and his new-found friends discover a plot
+            to unleash a dangerous computer virus, but they must use their
+            computer skills to find the evidence while being pursued by the
+            Secret Service and the evil computer genius behind the virus.
+          </section>
+        </main>
+        <aside class="sidebar">
+          <h3>Facts</h3>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
