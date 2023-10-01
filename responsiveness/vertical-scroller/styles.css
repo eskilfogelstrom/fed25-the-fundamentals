@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  overflow: scroll;
+  gap: 1rem;
+  position: relative;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card {
+  background-color: salmon;
+  padding: 1rem;
+  flex-shrink: 0;
+  width: 20rem;
+  scroll-snap-align: start;
+}
