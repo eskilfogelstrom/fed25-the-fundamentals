@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #542e00;
+}
+
+@keyframes sky {
+    0% {
+
+        background-color: skyblue;
+    }
+
+    100% {
+        background-color: hsl(240, 64%, 27%);
+    }
+}
+
+.sky {
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    background-color: skyblue;
+    animation: sky 5s linear 2.5s infinite alternate;
+}
+
+.orbit {
+    width: 100vmin;
+    height: 100vmin;
+    position: relative;
+    animation: orbit 10s linear infinite;
+    /* rotate: 45deg; */
+    transform-origin: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@keyframes orbit {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.sun,
+.moon {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.sun {
+    left: 0;
+    background-color: #fae100;
+}
+
+.moon {
+    width: 100px;
+    height: 100px;
+    right: 0;
+    background-color: #ffed94;
+}

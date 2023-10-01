@@ -1,0 +1,22 @@
+.marquee {
+    background-color: salmon;
+    overflow: hidden;
+    display: flex;
+}
+
+@keyframes marquee {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.marquee__content {
+    translate: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    animation: marquee 10s linear infinite;
+}

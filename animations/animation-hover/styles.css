@@ -1,0 +1,21 @@
+.box {
+    width: 24rem;
+    height: 24rem;
+    background-color: salmon;
+    transition: all 0.5s;
+    animation: rotate 2s linear infinite paused;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.box:hover {
+    animation-play-state: running;
+}

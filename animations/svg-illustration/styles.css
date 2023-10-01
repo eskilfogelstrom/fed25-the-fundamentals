@@ -1,0 +1,13 @@
+.eyebrow {
+    transition: all 1s;
+    transform-origin: center;
+}
+
+svg {
+    width: 400px;
+    height: auto;
+}
+
+svg:hover .eyebrow {
+    transform: rotate(-10deg);
+}
