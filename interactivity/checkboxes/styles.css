@@ -1,0 +1,22 @@
+.content {
+  visibility: hidden;
+  transition: all 0.5s;
+  translate: -100%;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle:checked ~ .content {
+  visibility: visible;
+  translate: 0;
+}
+
+.floating-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: salmon;
+  cursor: pointer;
+}

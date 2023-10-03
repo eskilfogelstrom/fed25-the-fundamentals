@@ -1,0 +1,21 @@
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(0 0 0 /0.5);
+}
+
+.accordion[open] {
+  background-color: salmon;
+}
+
+.accordion__summary {
+  list-style: none;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion__content {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
