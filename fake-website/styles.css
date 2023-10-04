@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid inherit;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn--primary {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.section {
+  padding: 8rem 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.section--alt {
+  background-color: #edfaff;
+}
+
+.announcement {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  padding: 2rem 0;
+}
+
+.site-header__menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header__link {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.site-header__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.5s;
+}
+
+.site-header__link:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.banner {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.banner__container {
+  padding: 8rem 0;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  display: flex;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.banner__content {
+  width: 55%;
+  font-size: 1.25rem;
+  padding: 3rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.banner__heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes wordSpinner {
+  0% {
+    translate: 0 0;
+  }
+
+  20% {
+    translate: 0 0;
+  }
+
+  33.33% {
+    translate: 0 -3.3rem;
+  }
+
+  50.33% {
+    translate: 0 -3.3rem;
+  }
+
+  66.66% {
+    translate: 0 -6.6rem;
+  }
+
+  86.66% {
+    translate: 0 -6.6rem;
+  }
+}
+
+.spinner {
+  display: inline-block;
+  height: 3.3rem;
+  overflow: hidden;
+  background-color: #000;
+  margin-left: 0.75rem;
+  color: #fff;
+  padding: 0 0.25rem;
+}
+
+.spinner__words {
+  animation: wordSpinner 4s ease-in-out infinite;
+  list-style: none;
+}
+
+.spinner__word {
+  line-height: 3.3rem;
+}
+
+.banner__text {
+  margin-bottom: 2rem;
+}
+
+@keyframes bannerImage {
+  0% {
+    translate: 0 0;
+  }
+
+  100% {
+    translate: 0 300px;
+  }
+}
+
+.banner__image {
+  width: 40%;
+  animation: bannerImage auto linear;
+  animation-timeline: scroll();
+  position: absolute;
+}
+
+.banner__image--left {
+  left: -10rem;
+  bottom: 4rem;
+}
+
+.banner__image--right {
+  right: 0;
+  top: 6rem;
+}
+
+.banner__image img {
+  width: 100%;
+  transition: scale 500ms;
+}
+
+.services {
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.services__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.services__item {
+  flex: 1;
+}
+
+.asymetric-grid {
+  max-width: 60rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  place-items: end;
+}
+
+.asymetric-grid__content {
+  grid-column: 1 / 7;
+  padding-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    translate: 0 40px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.asymetric-grid__item {
+  grid-column-end: span 3;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 24px;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 0.25);
+  animation: fadeIn auto linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 200%;
+}
+
+.asymetric-grid__item:nth-child(2) {
+  grid-column-start: 8;
+  grid-row: 1;
+}
+
+.asymetric-grid__item:nth-child(3) {
+  grid-column-start: 6;
+  grid-row: 2;
+}
+
+.asymetric-grid__item:nth-child(4) {
+  grid-column-start: 9;
+  grid-row: 2;
+}
+
+.asymetric-grid__item:nth-child(5) {
+  grid-column-start: 4;
+  grid-row: 3;
+}
+.asymetric-grid__item:nth-child(6) {
+  grid-column-start: 7;
+  grid-row: 3;
+}
